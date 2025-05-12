@@ -75,6 +75,7 @@ body.dark #display {
 }
 
 body.dark .btn {
+color: white;
   box-shadow: 5px 5px 10px #151515, -5px -5px 10px #2a2a2a;
 }
 
