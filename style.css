@@ -87,6 +87,10 @@ body.dark .btn:active {
   border-radius: 15px;
 
 }
+.clear{
+    background-color: blue;
+    color: white;
+}
 
 .toggle-btn {
   position: absolute;
