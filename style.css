@@ -78,10 +78,11 @@ body.dark .btn:active {
 
 .equal {
   grid-column: span 4;
-  background: #00c9a7;
+  background: red;
   color: white;
   font-weight: bold;
   border-radius: 15px;
+
 }
 
 .toggle-btn {
