@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+  background: #e0e0e0;
+  color: #333;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.calculator {
+  background: inherit;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+body.dark .calculator {
+  box-shadow: 10px 10px 20px #151515, -10px -10px 20px #2a2a2a;
+}
+
+#display {
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  background: inherit;
+  color: inherit;
+}
+
+body.dark #display {
+  box-shadow: inset 5px 5px 10px #151515, inset -5px -5px 10px #2a2a2a;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: inherit;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+body.dark .btn {
+  box-shadow: 5px 5px 10px #151515, -5px -5px 10px #2a2a2a;
+}
+
+.btn:active {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+body.dark .btn:active {
+  box-shadow: inset 5px 5px 10px #151515, inset -5px -5px 10px #2a2a2a;
+}
+
+.equal {
+  grid-column: span 4;
+  background: #00c9a7;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#theme-toggle {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
