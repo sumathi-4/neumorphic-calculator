@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Segoe UI', sans-serif;
   display: flex;
@@ -6,6 +7,9 @@ body {
   justify-content: center;
   height: 100vh;
   transition: background 0.3s, color 0.3s;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 50px;
 }
 
 body.light {
@@ -22,20 +26,20 @@ body.dark {
   background: inherit;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px #bebebe, 
-              -10px -10px 20px #bebebe, 
-              -10px 10px 20px #bebebe, 
-              10px -10px 20px #bebebe;
+  box-shadow: 10px 10px 10px #bebebe, 
+              -10px -10px 10px #bebebe, 
+              -10px 10px 10px #bebebe, 
+              10px -10px 10px #bebebe;
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
 body.dark .calculator {
-  box-shadow: 10px 10px 20px #151515, 
-              -10px -10px 20px #151515, 
-              -10px 10px 20px #151515, 
-              10px -10px 20px #151515;
+  box-shadow: 10px 10px 10px #151515, 
+              -10px -10px 10px #151515, 
+              -10px 10px 10px #151515, 
+              10px -10px 10px #151515;
 }
 
 #display {
@@ -96,7 +100,7 @@ body.dark .btn:active {
   color: white;
   font-weight: bold;
   border-radius: 15px;
-  font-size: 25px;
+  font-size: 20px;
 
 }
 
@@ -112,4 +116,14 @@ body.dark .btn:active {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 480px) {
+  .calculator {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 15px;
+  }
 }
